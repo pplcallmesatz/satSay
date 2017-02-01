@@ -1,0 +1,178 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 50px;
+	font-size: 16px;
+}
+a {
+	color: #7616B9;	
+}
+a:hover {
+	color: #7616B9;	
+}
+
+/* Bootstrp Override */
+.navbar-fixed-top {
+	background-color: #fff;
+	box-shadow: 0px 1px 8px 0px rgba(51, 51, 51, 0.2);
+	-webkit-box-shadow: 0px 1px 8px 0px rgba(51, 51, 51, 0.2);
+	-moz-box-shadow: 0px 1px 8px 0px rgba(51, 51, 51, 0.2);
+}
+.navbar-collapse {
+	background-color: #fff;
+}
+.navbar-toggle {
+	border-color: #7616B9;
+}
+.icon-bar {
+	background-color: #7616B9;
+}
+.btn-primary {
+	color: #7616B9;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus, 
+.open>.dropdown-toggle.btn-primary:hover {
+	color: #fff;
+	background-color: #7616B9 !important;
+}
+.btn-outline {
+	background-color: #fff;
+	border-radius: 0px;
+	border: none;
+			box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+}
+/* General Styles */
+.caption {
+	font-size: 1.2em;
+margin-top: 70px;
+	margin-bottom: 50px;
+}
+.pricing-button {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.pricing-button .btn {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}
+/* box */
+.box {
+	width: 290px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	padding: 10px;
+	border-radius: 15px;
+		box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+	margin-bottom: 30px;
+	border: 2px solid transparent;
+	cursor: pointer;
+
+	/*Transition*/
+	
+	transition: all linear 0.15s;
+	-webkit-transition: all linear 0.15s;
+	-moz-transition: all linear 0.15s;
+	-o-transition: all linear 0.15s;
+}
+.box.active .selected {
+	opacity: 1px;
+	visibility: visible;
+	/*Transition*/
+	
+	transition: all linear 0.15s;
+	-webkit-transition: all linear 0.15s;
+	-moz-transition: all linear 0.15s;
+	-o-transition: all linear 0.15s;
+	
+}
+.selected {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	padding-top: 3px;
+	color: #1EAAD2;
+	border-radius: 30px;
+	text-align: center;
+	border: 2px solid #1EAAD2;
+	opacity: 0px;
+	visibility: hidden;
+}
+.box.active,
+.box:hover {
+	border: 2px solid #7616B9;
+}
+.box-header {
+	margin-bottom: 30px;
+}
+.box-img {
+	height: 130px;
+	display: inline-block;
+}
+.box-title {
+	font-size: 1.1em;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.box-body {
+	min-height: 200px;
+	margin-bottom: 40px
+}
+.box-body p {
+	font-size: 0.9em;
+}
+.price {
+	font-size: 1.7em;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.price span {
+	font-size: .5em;
+	vertical-align: text-top;
+	color: #1EAAD2;
+}
+.box-footer {
+	padding: 0px 10px  ;
+}
+.box-footer p {
+	color: #7616B9;
+	text-transform: uppercase;
+}
+
+
+@media (min-width: 768px) {
+	.navbar-collapse {
+		float: right;
+	}
+	.caption {
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+}
+@media (min-width: 600px) {
+	.pricing-button .btn {
+	width: 225px;
+		margin-right: 15px;
+	margin-left: 15px;
+	}
+}
+@media (max-width: 599px) {
+	.pricing-button .btn {
+		margin-top: 15px;
+	margin-bottom: 15px;
+	}
+}
