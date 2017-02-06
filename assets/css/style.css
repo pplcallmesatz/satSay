@@ -9,6 +9,9 @@ a {
 a:hover {
 	color: #7616B9;	
 }
+.bg-dark {
+	background-color: #ddd;
+}
 
 /* Bootstrp Override */
 .navbar-fixed-top {

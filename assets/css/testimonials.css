@@ -1,0 +1,122 @@
+.testimonial-box {	
+	    position: relative;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: block;
+}
+.testimonial-content p:not(.author) {
+	margin: 0px !important;
+}
+.testimonial-content {
+		width: calc(100% - 100px);
+	border-radius: 8px;
+	padding: 20px;
+	margin-left: 100px;
+	position: relative;
+	}
+.testimonial-img {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 35px;
+	top: 50%;
+	margin-top: -30px;
+	margin-left: -30px;
+}
+.testimonial-img img{
+	display: inline-block;
+}
+.testimonial-box:after {
+    display: table;
+}
+
+.testimonial-box:nth-child(2n+1) .author {
+	color: #7616B9;
+}
+.testimonial-box:nth-child(2n) .author {
+	color: #1EAAD2;
+}
+
+.testimonial-box:after, .testimonial-content:after {
+    content: "";
+    clear: both;
+}
+.testimonial-caption {
+	font-size: 1.2em;
+padding-top: 50px;
+	padding-bottom: 50px;
+}
+@media (min-width: 991px) {
+.testimonial-content {
+		width: 45%;
+	border-radius: 8px;
+	padding: 20px;
+	margin-left: 0px;
+	}	
+	.testimonial-img {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -30px;
+	margin-left: -30px;
+}
+	.testimonial-box:nth-child(2n) .testimonial-content {
+	float: right;
+}
+	.author {
+		position: absolute;
+		left: calc(50% + 60px);
+		top: 50%;
+		width: 100%;
+		transform: translateY(-50%);
+	}
+	.testimonial-box:nth-child(2n) .author {
+		position: absolute;
+		left: calc(45% - 100px);
+		top: 50%;
+		width: 100%;
+		transform: translateY(-50%);
+}
+	
+} 
+@media (max-width:992px) {
+	.testimonial-content  .author {
+		margin-top: 20px !important;
+	}
+}
+@media (min-width: 768px){
+	.testimonial-content {
+    box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+	}
+}
+@media (max-width: 767px){
+	.testimonial-img {
+		position: relative;
+		text-align: center;
+		margin-bottom: 20px;
+		left: 50%;
+		margin-left: -30px;
+		padding-top: 25px;
+	}
+	.testimonial-content {
+		width: 100%;
+		margin-left: 0px;
+		
+	}
+	.testimonial-box {
+		margin-top: 75px;
+		margin-bottom: 75px;
+		border-radius: 8px;
+    box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+	}
+	.author {
+		padding-left: 20px;
+	}
+	
+}
