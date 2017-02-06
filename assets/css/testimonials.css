@@ -69,13 +69,11 @@ padding-top: 50px;
 	.author {
 		left: calc(50% + 60px);
 		top: 50%;
-		width: 100%;
 		transform: translateY(-50%);
 	}
 	.testimonial-box:nth-child(2n) .author {
 		left: calc(45% - 100px);
 		top: 50%;
-		width: 100%;
 		transform: translateY(-50%);
 }
 	
@@ -91,7 +89,13 @@ padding-top: 50px;
 	-webkit-box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
 	-moz-box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
 	}
-		.author {
+	.author {
+		position: absolute;
+		width: auto;
+	}
+}
+@media (max-width: 992px) and (min-width: 768px){
+			.author {
 		position: absolute;
 			    left: 100px;
 			margin-top: 10px;
